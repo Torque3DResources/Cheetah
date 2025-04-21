@@ -24,6 +24,7 @@ function CheetahCar::onAdd(%this, %obj)
 {
    Parent::onAdd(%this, %obj);
 
+   NavMeshIgnore(%obj, true);
    %obj.setWheelTire(0,CheetahCarTire);
    %obj.setWheelTire(1,CheetahCarTire);
    %obj.setWheelTire(2,CheetahCarTireRear);

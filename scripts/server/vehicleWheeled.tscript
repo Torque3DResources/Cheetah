@@ -51,10 +51,6 @@ function WheeledVehicleData::onAdd(%this, %obj)
    %obj.setWheelPowered(3, true);
 }
 */
-function WheeledVehicleData::onCollision(%this, %obj, %col, %vec, %speed)
-{
-   // Collision with other objects, including items
-}
 
 // Used to kick the players out of the car that your crosshair is over
 function serverCmdcarUnmountObj(%client, %obj)

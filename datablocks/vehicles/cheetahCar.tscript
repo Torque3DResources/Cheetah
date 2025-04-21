@@ -325,7 +325,7 @@ datablock WheeledVehicleData(CheetahCar)
    drag = 0.6;                // Drag coefficient
    bodyFriction = 0.6;
    bodyRestitution = 0.4;
-   minImpactSpeed = 5;        // Impacts over this invoke the script callback
+   minImpactSpeed = "1";        // Impacts over this invoke the script callback
    softImpactSpeed = 5;       // Play SoftImpact Sound
    hardImpactSpeed = 15;      // Play HardImpact Sound
    integration = 8;           // Physics integration: TickSec/Rate
@@ -368,6 +368,12 @@ datablock WheeledVehicleData(CheetahCar)
    squealSoundAsset = "Cheetah:cheetahSqueal";
    
    dustTrailEmitter = "CheetahTireEmitter";
-   triggerDustHeight = "-0.1";
+   triggerDustHeight = "0";
    downforce = 0.01;
+   maxDamage = 1000;
+   minImpactSpeed = 1;
+   collisionMul = 0.1;
+   impactMul = 1;
+   controlMap = "vehicleKeyMap";
+   AIControllerData = "aiCarControl";
 };
