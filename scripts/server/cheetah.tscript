@@ -114,15 +114,6 @@ function CheetahCar::onAdd(%this, %obj)
 function CheetahCar::onRemove(%this, %obj)
 {
    Parent::onRemove(%this, %obj);
-
-   if(isObject(%obj.rightBrakeLight))
-      %obj.rightBrakeLight.delete();
-
-   if(isObject(%obj.leftBrakeLight))
-      %obj.leftBrakeLight.delete();
-
-   if(isObject(%obj.turret))
-      %obj.turret.delete();
 }
 
 function serverCmdtoggleBrakeLights(%client)
