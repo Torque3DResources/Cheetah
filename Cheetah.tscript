@@ -42,11 +42,8 @@ function Cheetah::initClient(%this)
     %this.queueExec("./scripts/client/client");
     
    //keybind scripts   
-   %this.queueExec("./scripts/client/defaultkeybinds");   
-   %prefPath = getPrefpath();
-   if(isScriptFile(%prefPath @ "/keybinds"))
-      exec(%prefPath @ "/keybinds");
-    %this.queueExec("./scripts/client/client");
+   %this.queueExec("./scripts/client/defaultkeybinds");
+   %this.queueExec("./scripts/client/client");
 }
 
 function Cheetah::onCreateClientConnection(%this)
